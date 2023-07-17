@@ -15,6 +15,7 @@ import * as microsoftTeams from "@microsoft/teams-js";
 import { TeamsThemeContext, getContext, ThemeStyle } from 'msteams-ui-components-react';
 import ErrorPage from "./components/ErrorPage/errorPage";
 import SignInPage from "./components/SignInPage/signInPage";
+import TermsOfUse from "./components/SignInPage/termsOfUse";
 import SignInSimpleStart from "./components/SignInPage/signInSimpleStart";
 import SignInSimpleEnd from "./components/SignInPage/signInSimpleEnd";
 import { updateLocale } from './i18n';
@@ -127,6 +128,7 @@ class App extends React.Component<{}, IAppState> {
                                 <Route exact path="/signin-simple-start" component={SignInSimpleStart} />
                                 <Route exact path="/signin-simple-end" component={SignInSimpleEnd} />
                                 <Route exact path="/managegroups" component={ManageGroups} />
+                                <Route exact path="/termsOfUse" component={TermsOfUse} />
                             </Switch>
                         </BrowserRouter>
                     </div>
