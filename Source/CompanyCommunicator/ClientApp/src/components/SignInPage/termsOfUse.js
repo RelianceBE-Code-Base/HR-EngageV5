@@ -3,7 +3,7 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './App.scss'; 
+import './signInPage.scss'; 
 
 /**
  * This component is used to display the required
