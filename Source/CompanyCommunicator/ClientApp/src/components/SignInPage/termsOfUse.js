@@ -3,7 +3,8 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './signInPage.scss'; 
+import 'style.css'; 
+import 'utilities.css'; 
 
 /**
  * This component is used to display the required
@@ -17,10 +18,12 @@ class termsOfUse extends React.Component {
         {/* Navbar */}
         <div class="navbar">
           <div class="container flex">
-            <h1 class="logo">HR-Engage</h1>
+            <h1 class="logo">HR Engage</h1>
             <nav>
               <ul>
                 <li><Link to="/">Home</Link></li>
+                <li><Link to="/privacy">Privacy</Link></li>
+                <li><Link to="/termsofuse">Terms of Use</Link></li>
               </ul>
             </nav>
           </div>
@@ -30,7 +33,7 @@ class termsOfUse extends React.Component {
         <section class="terms-of-use-text">
           <div class="container">
             <h1>Terms of Use</h1>
-            <p>Last updated: June 03, 2023</p>
+            <p>Last updated: August 03, 2023</p>
 
             <p>The HR-Engage application is a copyrighted work belonging to Reliance Infosystems Limited. Certain
               features of the application may be subject to additional guidelines, terms, or rules, which will be
