@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from 'react-router-dom';
-import './css/style.css';
-import './css/utilities.css';
+import './style.css';
+import './utilities.css';
 import topImage from './images/top-Image.png';
 import newRequest from './images/newForm.png';
 import TrackerRequest from './images/trackerRequest.png';
@@ -17,7 +17,7 @@ class Home extends React.Component {
                 {/* Navbar */}
                 <div className="navbar">
                     <div className="container flex">
-                        <h1 className="logo">Expense Claim</h1>
+                        <h1 className="logo">HR Engage</h1>
                         <nav>
                             <ul>
                                 <li><Link to="/">Home</Link></li>
@@ -35,9 +35,9 @@ class Home extends React.Component {
                         <div className="showcase-text">
                             <h1>Revolutionizing</h1>
                             <h1>Your Organization's</h1>
-                            <h1>Expense Claim Management.</h1>
-                            <p>As organizations evolve and grow, managing expense claims can become a complex process. Our intuitive application simplifies the submission, tracking, and approval of expense requests, providing a seamless experience for employees and administrators.</p>
-                            <p>Built for Microsoft Teams, Office 365, and Outlook.</p>
+                            <h1>HR Engage.</h1>
+                            <p>As organizations evolve and grow, managing employees engagement and communication can become a complex process. Our HR Engage is a comprehensive solution for enhancing employee engagement within organizations. By leveraging the familiar Teams interface, ‘HR Engage’ enables employees to access important company information, such as announcements, birthday updates, anniversaries, company events, newsletters, and more. This application facilitates efficient and effective employee engagement, allowing broadcasting of messages to multiple teams and individuals through channel posts and chat messages, Scheduling of messages and more.</p>
+                            <p>Built for Microsoft Teams.</p>
                             <a href="/" className="btn-btn btn-primary">Check on AppSource</a>
                         </div>
 
@@ -57,8 +57,8 @@ class Home extends React.Component {
                     <div className="app-features">
                         <div className="grid container">
                             <div>
-                                <h2>Submitting of Request with Line Items</h2>
-                                <p>Employees can easily submit expense requests along with detailed line items, providing clarity and accuracy in expense reporting.</p>
+                                <h2>Overview of the HR Engage Admin page</h2>
+                                <p>Admin can see drafted messages, scheduled and, sent messages in one view .</p>
                             </div>
                             <div><img src={newRequest} alt="" /></div>
                         </div>
@@ -68,7 +68,7 @@ class Home extends React.Component {
                         <div className="grid container">
                             <div><img src={TrackerRequest} alt="" /></div>
                             <div>
-                                <h2>View and Track Personal Previous Requests</h2>
+                                <h2>Send Message</h2>
                                 <p>Employees can view and track their previous expense requests, enabling them to monitor their spending and track reimbursement status.</p>
                             </div>
                         </div>
@@ -77,7 +77,7 @@ class Home extends React.Component {
                     <div className="app-features">
                         <div className="grid container">
                             <div>
-                                <h2>View All Requests Raised by All Users</h2>
+                                <h2>Configure Message Audience</h2>
                                 <p>Administrators can access a centralized view of all expense requests raised by employees, allowing for better visibility and control over expenses.</p>
                             </div>
                             <div><img src={allRequests} alt="" /></div>
@@ -88,7 +88,7 @@ class Home extends React.Component {
                         <div className="grid container">
                             <div><img src={userConfig} alt="" /></div>
                             <div>
-                                <h2>All Approval View and Action of Requests</h2>
+                                <h2>View Details of a Particular Message</h2>
                                 <p>Administrators have a comprehensive overview of all expense requests, allowing them to review, approve, or reject requests efficiently.</p>
                             </div>
                         </div>
@@ -97,7 +97,7 @@ class Home extends React.Component {
                     <div className="app-features">
                         <div className="grid container">
                             <div>
-                                <h2>Configuration (Currency, Category, and Approval Personnel)</h2>
+                                <h2>Broadcast Posted on Teams Channel</h2>
                                 <p>Administrators can configure expense-related settings such as currency options, expense categories, and approval personnel, tailoring the application to the organization's needs.</p>
                             </div>
                             <div><img src={approval} alt="" /></div>
@@ -108,7 +108,7 @@ class Home extends React.Component {
                         <div className="grid container">
                             <div><img src={statsAdmin} alt="" /></div>
                             <div>
-                                <h2>User Expense Summary Overview Monthly</h2>
+                                <h2>User Gets Broadcast as a Chat</h2>
                                 <p>Users and administrators can access a summary overview of monthly expenses, allowing for better budgeting and financial analysis.</p>
                             </div>
                         </div>
@@ -117,9 +117,9 @@ class Home extends React.Component {
                     {/* The conclusion*/}
                     <section className="conclusion" id="the-make-up">
                         <div>
-                            <h1>The Expense Claim App</h1>
-                            <h1>helps you streamline</h1>
-                            <h1>your organization's expense claim process.</h1>
+                            <h1>The HR Engage</h1>
+                            <h1>helps you streamline and enhance employee engagement</h1>
+                            <h1>by providing a convenient platform that consolidates various communication channels and engagement activities.</h1>
                             <a href="/" className="btn-btn btn-primary">Check on AppSource</a>
                         </div>
                     </section>
@@ -129,7 +129,7 @@ class Home extends React.Component {
                         <div>
                             <p><Link to="/privacy">Privacy Policy</Link></p>
                             <p><Link to="/termsofuse">Terms of Use</Link></p>
-                            <p>&copy; Reliance Infosystems Limited</p>
+                            <p>&copy; Reliance Infosystems</p>
                         </div>
                     </footer>
 
