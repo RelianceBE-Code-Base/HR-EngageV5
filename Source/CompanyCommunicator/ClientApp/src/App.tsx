@@ -16,6 +16,8 @@ import { TeamsThemeContext, getContext, ThemeStyle } from 'msteams-ui-components
 import ErrorPage from "./components/ErrorPage/errorPage";
 import SignInPage from "./components/SignInPage/signInPage";
 import TermsOfUse from "./components/SignInPage/termsOfUse";
+import Privacy from "./components/SignInPage/Privacy";
+import Home from "./components/SignInPage/homepage";
 import SignInSimpleStart from "./components/SignInPage/signInSimpleStart";
 import SignInSimpleEnd from "./components/SignInPage/signInSimpleEnd";
 import { updateLocale } from './i18n';
@@ -129,6 +131,8 @@ class App extends React.Component<{}, IAppState> {
                                 <Route exact path="/signin-simple-end" component={SignInSimpleEnd} />
                                 <Route exact path="/managegroups" component={ManageGroups} />
                                 <Route exact path="/termsOfUse" component={TermsOfUse} />
+                                <Route exact path="/" component={Home} />
+                                <Route exact path="/privacy" component={Privacy} />
                             </Switch>
                         </BrowserRouter>
                     </div>
