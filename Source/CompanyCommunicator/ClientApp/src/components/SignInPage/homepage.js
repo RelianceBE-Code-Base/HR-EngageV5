@@ -2,13 +2,13 @@ import React from "react";
 import { Link } from 'react-router-dom';
 import './style.css';
 import './utilities.css';
-import topImage from './images/top-Image.png';
-import newRequest from './images/newForm.png';
-import TrackerRequest from './images/trackerRequest.png';
-import userConfig from './images/Approval-Action.png';
-import approval from './images/Approval-Action.png';
-import allRequests from './images/allRequest.png';
-import statsAdmin from './images/overview.png';
+import topImage from './Message Overview.jpeg';
+import newRequest from './New Message.jpeg';
+import TrackerRequest from './Schedule.jpeg';
+import userConfig from './Configure Audience.jpeg';
+import approval from './viewMessage.jpeg';
+import allRequests from './viewChannel.jpeg';
+import statsAdmin from './viewChat.jpeg';
 
 class Home extends React.Component {
     render() {
@@ -60,16 +60,16 @@ class Home extends React.Component {
                                 <h2>Overview of the HR Engage Admin page</h2>
                                 <p>Admin can see drafted messages, scheduled and, sent messages in one view .</p>
                             </div>
-                            <div><img src={newRequest} alt="" /></div>
+                            <div><img src={topImage} alt="" /></div>
                         </div>
                     </div>
 
                     <div className="app-features app-features-light-section">
                         <div className="grid container">
-                            <div><img src={TrackerRequest} alt="" /></div>
+                            <div><img src={newRequest} alt="" /></div>
                             <div>
                                 <h2>Send Message</h2>
-                                <p>Employees can view and track their previous expense requests, enabling them to monitor their spending and track reimbursement status.</p>
+                                <p>Enter message information, upload image and add call to action button.</p>
                             </div>
                         </div>
                     </div>
@@ -78,18 +78,18 @@ class Home extends React.Component {
                         <div className="grid container">
                             <div>
                                 <h2>Configure Message Audience</h2>
-                                <p>Administrators can access a centralized view of all expense requests raised by employees, allowing for better visibility and control over expenses.</p>
+                                <p>Pick from four options to target audience. Send to general channel of selected teams, send in 1:1 chat to members of selected teams, send to all users who have the app installed or send to M365 groups, CSV file, distribution lists or security groups.</p>
                             </div>
-                            <div><img src={allRequests} alt="" /></div>
+                            <div><img src={userConfig} alt="" /></div>
                         </div>
                     </div>
 
                     <div className="app-features app-features-light-section">
                         <div className="grid container">
-                            <div><img src={userConfig} alt="" /></div>
+                            <div><img src={approval} alt="" /></div>
                             <div>
                                 <h2>View Details of a Particular Message</h2>
-                                <p>Administrators have a comprehensive overview of all expense requests, allowing them to review, approve, or reject requests efficiently.</p>
+                                <p>Administrators have a comprehensive overview of a message sent.</p>
                             </div>
                         </div>
                     </div>
@@ -98,7 +98,7 @@ class Home extends React.Component {
                         <div className="grid container">
                             <div>
                                 <h2>Broadcast Posted on Teams Channel</h2>
-                                <p>Administrators can configure expense-related settings such as currency options, expense categories, and approval personnel, tailoring the application to the organization's needs.</p>
+                                <p>Users get HR Engage messages in a Teams Channel as they drops.</p>
                             </div>
                             <div><img src={approval} alt="" /></div>
                         </div>
@@ -109,7 +109,7 @@ class Home extends React.Component {
                             <div><img src={statsAdmin} alt="" /></div>
                             <div>
                                 <h2>User Gets Broadcast as a Chat</h2>
-                                <p>Users and administrators can access a summary overview of monthly expenses, allowing for better budgeting and financial analysis.</p>
+                                <p>Users get HR Engage messages as chat as they drops.</p>
                             </div>
                         </div>
                     </div>
