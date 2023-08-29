@@ -4,7 +4,7 @@ import './style.css';
 import './utilities.css';
 import topImage from './Message Overview.jpeg';
 import newRequest from './New Message.jpeg';
-import TrackerRequest from './Schedule.jpeg';
+//import TrackerRequest from './Schedule.jpeg';
 import userConfig from './Configure Audience.jpeg';
 import approval from './viewMessage.jpeg';
 import allRequests from './viewChannel.jpeg';
