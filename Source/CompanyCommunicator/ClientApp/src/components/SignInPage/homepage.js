@@ -38,7 +38,7 @@ class Home extends React.Component {
                             <h1>HR Engage.</h1>
                             <p>As organizations evolve and grow, managing employees engagement and communication can become a complex process. Our HR Engage is a comprehensive solution for enhancing employee engagement within organizations. By leveraging the familiar Teams interface, ‘HR Engage’ enables employees to access important company information, such as announcements, birthday updates, anniversaries, company events, newsletters, and more. This application facilitates efficient and effective employee engagement, allowing broadcasting of messages to multiple teams and individuals through channel posts and chat messages, Scheduling of messages and more.</p>
                             <p>Built for Microsoft Teams.</p>
-                            //<a href="/" className="btn-btn btn-primary">Check on AppSource</a>
+                            
                         </div>
 
                         <div className="showcase-image-container">
