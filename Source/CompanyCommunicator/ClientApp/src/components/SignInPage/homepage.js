@@ -6,9 +6,9 @@ import topImage from './Messages Overview.jpeg';
 import newRequest from './New Message.jpeg';
 //import TrackerRequest from './Schedule.jpeg';
 import userConfig from './Configure Audience.jpeg';
-import approval from './viewMessage.jpeg';
-import allRequests from './viewChannel.jpeg';
-import statsAdmin from './viewChat.jpeg';
+import viewMessage from './viewMessage.jpeg';
+import viewChannel from './viewChannel.jpeg';
+import viewChat from './viewChat.jpeg';
 
 class Home extends React.Component {
     render() {
@@ -86,7 +86,7 @@ class Home extends React.Component {
 
                     <div className="app-features app-features-light-section">
                         <div className="grid container">
-                            <div><img src={approval} alt="" /></div>
+                            <div><img src={viewMessage} alt="" /></div>
                             <div>
                                 <h2>View Details of a Particular Message</h2>
                                 <p>Administrators have a comprehensive overview of a message sent.</p>
@@ -100,13 +100,13 @@ class Home extends React.Component {
                                 <h2>Broadcast Posted on Teams Channel</h2>
                                 <p>Users get HR Engage messages in a Teams Channel as they drops.</p>
                             </div>
-                            <div><img src={approval} alt="" /></div>
+                            <div><img src={viewChannel} alt="" /></div>
                         </div>
                     </div>
 
                     <div className="app-features app-features-light-section">
                         <div className="grid container">
-                            <div><img src={statsAdmin} alt="" /></div>
+                            <div><img src={viewChat} alt="" /></div>
                             <div>
                                 <h2>User Gets Broadcast as a Chat</h2>
                                 <p>Users get HR Engage messages as chat as they drops.</p>
