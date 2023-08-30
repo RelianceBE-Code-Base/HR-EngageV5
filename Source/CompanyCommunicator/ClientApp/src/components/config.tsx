@@ -49,7 +49,7 @@ class Configuration extends React.Component<ConfigProps, IConfigState> {
             microsoftTeams.settings.setSettings({
                 entityId: "Company_Communicator_App",
                 contentUrl: this.state.url,
-                suggestedDisplayName: "Company Communicator",
+                suggestedDisplayName: "HR Engage",
             });
             saveEvent.notifySuccess();
         });
