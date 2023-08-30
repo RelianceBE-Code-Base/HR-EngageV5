@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from 'react-router-dom';
 import './style.css';
 import './utilities.css';
-import topImage from './Message Overview.jpeg';
+import topImage from './Messages Overview.jpeg';
 import newRequest from './New Message.jpeg';
 //import TrackerRequest from './Schedule.jpeg';
 import userConfig from './Configure Audience.jpeg';
