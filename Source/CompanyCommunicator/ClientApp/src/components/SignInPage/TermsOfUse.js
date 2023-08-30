@@ -19,7 +19,7 @@ class TermsOfUse extends React.Component {
         {/* Navbar */}
         <div class="navbar">
           <div class="container flex">
-            <h1 class="logo">Expense Claim</h1>
+            <h1 class="logo">HR Engage</h1>
             <nav>
               <ul>
                 <li><Link to="/">Home</Link></li>
@@ -41,7 +41,7 @@ class TermsOfUse extends React.Component {
 
 
 
-            <p>Welcome to the Expense Claim Application by Reliance Infosystems Limited ("Company", "we", "us", or "our"). The following Terms of Use govern your use of our application and any services offered in association with it. By accessing, viewing, or using the content, material, products, or services available on or through the Application, you certify that you have read, understand, and agree to be legally bound by these Terms, as well as our Privacy Policy, incorporated herein by reference.</p>
+            <p>Welcome to the HR Engage Application by Reliance Infosystems Limited ("Company", "we", "us", or "our"). The following Terms of Use govern your use of our application and any services offered in association with it. By accessing, viewing, or using the content, material, products, or services available on or through the Application, you certify that you have read, understand, and agree to be legally bound by these Terms, as well as our Privacy Policy, incorporated herein by reference.</p>
 
 
 
@@ -53,7 +53,7 @@ class TermsOfUse extends React.Component {
 
 
 
-            <p>In these Terms of Use, the term "Application" refers to the Expense Claim Application owned and operated by Reliance Infosystems Limited, its agents, affiliates, and/or licensors.</p>
+            <p>In these Terms of Use, the term "Application" refers to the HR Engage Application owned and operated by Reliance Infosystems Limited, its agents, affiliates, and/or licensors.</p>
 
 
 
