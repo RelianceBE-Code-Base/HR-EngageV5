@@ -1,4 +1,4 @@
-﻿import React from 'react'
+import * as React from 'react';
 import "./desktopOnly.scss";
 import imgPlaceholder from "./placeholder-desktop.png";
 
