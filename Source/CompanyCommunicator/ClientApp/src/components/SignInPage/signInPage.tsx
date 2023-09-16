@@ -33,6 +33,11 @@ const SignInPage: React.FunctionComponent<RouteComponentProps> = props => {
                 content={errorMessage}
                 size="medium"
             />
+              <div className="space"></div>
+            <Text
+                content={"Click on the button below, and use your Microsoft365 account to sign in"}
+                size="medium"
+            />
             <div className="space"></div>
             <Button content={t("SignIn")} primary className="sign-in-button" onClick={onSignIn} />
         </div>
