@@ -1,0 +1,22 @@
+﻿
+
+.desktop-view-placeholder {
+    width: 70%;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80%;
+
+    img {
+        width: 70%;
+    }
+
+    .placeholder-text {
+        font-size: 14px;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 300 !important;
+    }
+}
