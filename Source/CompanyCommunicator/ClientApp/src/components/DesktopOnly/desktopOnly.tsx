@@ -7,7 +7,7 @@ function DesktopOnly() {
     return (
         <div className='desktop-view-placeholder'>
             <img src={imgPlaceholder} alt="" />
-            <h1 className='placeholder-text'>This view is only available on desktop</h1>
+            <h1 className='placeholder-text'>This tab is only available on desktop</h1>
         </div>
     )
 }
