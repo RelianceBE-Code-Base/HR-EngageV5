@@ -14,6 +14,7 @@ import { getDraftMessagesList, getScheduledMessagesList } from '../../actions';
 import { getAppSettings } from "../../apis/messageListApi";
 import { connect } from 'react-redux';
 import { TFunction } from "i18next";
+import DesktopOnly from "../DesktopOnly/desktopOnly";
 
 
 interface ITaskInfo {
@@ -96,6 +97,7 @@ class TabContainer extends React.Component<ITaskInfoProps, ITabContainerState> {
     }
 
     public render(): JSX.Element {
+        const isMobile = window.screen.width < 700
         var isMaster = this.isMasterAdmin(this.masterAdminUpns, this.state.userPrincipalName);
         const panels = [
             {
@@ -129,22 +131,32 @@ class TabContainer extends React.Component<ITaskInfoProps, ITabContainerState> {
             }
         ]
         return (
-            <Flex className="tabContainer" column fill gap="gap.small">
-                <Flex className="newPostBtn" hAlign="end" vAlign="end" gap="gap.small">
-                    {(this.targetingEnabled) &&
-                        <div><Label circular content={this.state.teamName} /> <Label circular content={this.state.channelName} /></div>}
-                    <Flex.Item push>
-                        <Button content={this.localize("NewMessage")} onClick={this.onNewMessage} primary />
-                    </Flex.Item>
-                    {((this.targetingEnabled) && (isMaster)) &&
-                        <Button content={this.localize("ManageGroups")} onClick={this.ManageGroups} />}
-                </Flex>
-                <Flex className="messageContainer">
-                    <Flex.Item grow={1} >
-                        <Accordion defaultActiveIndex={[0, 1, 2]} panels={panels} />
-                    </Flex.Item>
-                </Flex>
-            </Flex>
+              <>
+                {isMobile && (
+                    <DesktopOnly />
+                )}
+
+                {!isMobile && (<Flex className="tabContainer" column fill gap="gap.small" >
+
+                    <Flex className="newPostBtn" hAlign="end" vAlign="end" gap="gap.small">
+                        {(this.targetingEnabled) &&
+                            <div><Label circular content={this.state.teamName} /> <Label circular content={this.state.channelName} /></div>}
+                        <Flex.Item push>
+                            <Button content={this.localize("NewMessage")} onClick={this.onNewMessage} primary />
+                        </Flex.Item>
+                        {((this.targetingEnabled) && (isMaster)) &&
+                            <Button content={this.localize("ManageGroups")} onClick={this.ManageGroups} />}
+                    </Flex>
+
+                    <Flex className="messageContainer">
+                        <Flex.Item grow={1} >
+                            <Accordion defaultActiveIndex={[0, 1, 2]} panels={panels} />
+                        </Flex.Item>
+                    </Flex>
+
+                </Flex>)}
+            </>
+        
         );
     }
 
