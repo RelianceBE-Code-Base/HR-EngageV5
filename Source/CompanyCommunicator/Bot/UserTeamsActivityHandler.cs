@@ -78,6 +78,45 @@ namespace Microsoft.Teams.Apps.CompanyCommunicator.Bot
         }
 
         /// <inheritdoc/>
+
+          //Start Modification 2
+        // Greet when users are added to the conversation.
+        // Note that all channels do not send the conversation update activity.
+        // If you find that this bot works in the emulator, but does not in
+        // another channel the reason is most likely that the channel does not
+        // send this activity.
+        protected override async Task OnMembersAddedAsync(IList<ChannelAccount> membersAdded, ITurnContext<IConversationUpdateActivity> turnContext, CancellationToken cancellationToken)
+        {
+            foreach (var member in membersAdded)
+            {
+                if (member.Id != turnContext.Activity.Recipient.Id)
+                {
+                    //await turnContext.SendActivityAsync($"Hi there - {member.Name}. {WelcomeMessage}", cancellationToken: cancellationToken);
+                    //await turnContext.SendActivityAsync(InfoMessage, cancellationToken: cancellationToken);
+                    //await turnContext.SendActivityAsync($"{LocaleMessage} Current locale is '{turnContext.Activity.GetLocale()}'.", cancellationToken: cancellationToken);
+                    //await turnContext.SendActivityAsync(PatternMessage, cancellationToken: cancellationToken);
+
+
+                    var card = new HeroCard
+                {
+                    Title = "Welcome to HR Engage!",
+                    Text = @"HR Engage is a comprehensive solution for enhancing employees engagement within organizations.allowing broadcasting of messages to multiple teams and individuals through channel posts and chat messages.",
+                    Buttons = new List<CardAction>()
+                            {
+                                new CardAction(ActionTypes.OpenUrl, "Get an overview", null, "Get an overview", "Get an overview", "https://hr-engage.azurewebsites.net")
+                            },
+                    Images = new List<CardImage>() { new CardImage("https://raw.githubusercontent.com/RelianceBE-Code-Base/HR-EngageV5/master/Source/CompanyCommunicator/ClientApp/public/image/HREngage.png") },
+
+                };
+
+                    var response = MessageFactory.Attachment(card.ToAttachment());
+                    await turnContext.SendActivityAsync(response, cancellationToken);
+
+
+                }
+            }
+        }
+        //End Modification
         protected override async Task OnReactionsAddedAsync(IList<MessageReaction> messageReactions, ITurnContext<IMessageReactionActivity> turnContext, CancellationToken cancellationToken)
         {
             // we can have multiple reactions for a specific message, specially when posted to channels
