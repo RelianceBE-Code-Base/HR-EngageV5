@@ -60,22 +60,6 @@ namespace Microsoft.Teams.Apps.CompanyCommunicator.Bot
             var membersAdded = activity.MembersAdded;
             if (membersAdded == null || !membersAdded.Any(p => p.Id == activity.Recipient.Id))
             {
-                 //Start Modification 1
-                //var card = new HeroCard
-                //{
-                 //   Title = "Welcome to HR Engage!",
-                 //   Text = @"HR Engage is a comprehensive solution for enhancing employees engagement within organizations.allowing broadcasting of messages to multiple teams and individuals through channel posts and chat messages.",
-                 //   Buttons = new List<CardAction>()
-                 //           {
-                 //               new CardAction(ActionTypes.OpenUrl, "Get an overview", null, "Get an overview", "Get an overview", "https://hr-engage.azurewebsites.net")
-                 //           },
-                 //   Images = new List<CardImage>() { new CardImage("https://raw.githubusercontent.com/RelianceBE-Code-Base/HR-EngageV5/master/Source/CompanyCommunicator/ClientApp/public/image/HREngage.png") },
-
-                };
-
-                //var response = MessageFactory.Attachment(card.ToAttachment());
-                //await turnContext.SendActivityAsync(response, cancellationToken);
-                //End Modification 2
                 return;
             }
 
