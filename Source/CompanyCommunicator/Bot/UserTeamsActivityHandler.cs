@@ -99,8 +99,8 @@ namespace Microsoft.Teams.Apps.CompanyCommunicator.Bot
 
                     var card = new HeroCard
                 {
-                     Title = "Hey "+ turnContext.Activity.Recipient.Name + ", Welcome to HR Engage for Microsoft Teams!",
-                            Text = $"Your organization has adopted HR Engage as a means of notifying you of future communications from your organization. \n\n HR Engage is a comprehensive solution for enhancing employees engagement within organizations. Allowing broadcasting of messages to multiple teams and individuals through channel posts and chat messages. \r\n-This message is to notify that the HR Engage installation has been completed.\r\n-Notifications from your organization will be displayed here as soon as the administrator dispatches any messages.\r\n-To ensure you receive notifications promptly, please refrain from blocking this chat or Uninstalling the app.\r\n-HR Egage is for notifications only. You cannot post to conversations or mention this app.",
+                     Title = "Welcome to HR Engage on Microsoft Teams!",
+                            Text = $"Your organization has adopted HR Engage as a means of notifying you of future communications from your organization. <br><br> HR Engage is a comprehensive solution for enhancing employees engagement within organizations. Allowing broadcasting of messages to multiple teams and individuals through channel posts and chat messages.<hr><ul><li>This message is to notify that the HR Engage installation has been completed.</li><li>-Notifications from your organizationwill be displayed here as soon as the administrator dispatches any messages.</li><li>To ensure you receive notifications promptly, please refrain from blocking this chat or Uninstalling the app.</li><li>HR Engage is for notifications only. You cannot post to conversations or mention this app.</li></ul>",
                             Buttons = new List<CardAction>()
                             {
                                 new CardAction(ActionTypes.OpenUrl, "Get an overview", null, "Get an overview", "Get an overview", "https://hr-engage.azurewebsites.net")
