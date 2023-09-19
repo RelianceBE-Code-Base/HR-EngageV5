@@ -35,9 +35,9 @@ class Home extends React.Component {
                         <div className="showcase-text">
                             <h1>Revolutionizing</h1>
                             <h1>Your Organization's</h1>
-                            <h1>HR Engage.</h1>
-                            <p>As organizations evolve and grow, managing employees engagement and communication can become a complex process. Our HR Engage is a comprehensive solution for enhancing employee engagement within organizations. By leveraging the familiar Teams interface, ‘HR Engage’ enables employees to access important company information, such as announcements, birthday updates, anniversaries, company events, newsletters, and more. This application facilitates efficient and effective employee engagement, allowing broadcasting of messages to multiple teams and individuals through channel posts and chat messages, Scheduling of messages and more.</p>
-                            <p>Built for Microsoft Teams.</p>
+                            <h1>HR Engage</h1>
+                            <p>As organizations evolve and grow, managing employees engagement and communication can become a complex process. Our HR Engage is a comprehensive solution for enhancing employee engagement within organizations. By leveraging the familiar Teams interface, ‘HR Engage’ enables employees to access important company information, such as announcements, birthday updates, anniversaries, company events, newsletters, and more. This application facilitates efficient and effective employee engagement, allowing broadcasting of messages to multiple teams and individuals through channel posts and chat messages, Scheduling of messages and more</p>
+                            <p>Built for Microsoft Teams</p>
                             
                         </div>
 
@@ -58,7 +58,7 @@ class Home extends React.Component {
                         <div className="grid container">
                             <div>
                                 <h2>Overview of the HR Engage Admin page</h2>
-                                <p>Admin can see drafted messages, scheduled and, sent messages in one view .</p>
+                                <p>Admin can see drafted messages, scheduled and, sent messages in one view</p>
                             </div>
                             <div><img src={topImage} alt="" /></div>
                         </div>
@@ -69,7 +69,7 @@ class Home extends React.Component {
                             <div><img src={newRequest} alt="" /></div>
                             <div>
                                 <h2>Send Message</h2>
-                                <p>Enter message information, upload image and add call to action button.</p>
+                                <p>Enter message information, upload image and add call to action button</p>
                             </div>
                         </div>
                     </div>
@@ -78,7 +78,7 @@ class Home extends React.Component {
                         <div className="grid container">
                             <div>
                                 <h2>Configure Message Audience</h2>
-                                <p>Pick from four options to target audience. Send to general channel of selected teams, send in 1:1 chat to members of selected teams, send to all users who have the app installed or send to M365 groups, CSV file, distribution lists or security groups.</p>
+                                <p>Pick from four options to target audience. Send to general channel of selected teams, send in 1:1 chat to members of selected teams, send to all users who have the app installed or send to M365 groups, CSV file, distribution lists or security groups</p>
                             </div>
                             <div><img src={userConfig} alt="" /></div>
                         </div>
@@ -89,7 +89,7 @@ class Home extends React.Component {
                             <div><img src={viewMessage} alt="" /></div>
                             <div>
                                 <h2>View Details of a Particular Message</h2>
-                                <p>Administrators have a comprehensive overview of a message sent.</p>
+                                <p>Administrators have a comprehensive overview of a message sent</p>
                             </div>
                         </div>
                     </div>
@@ -98,7 +98,7 @@ class Home extends React.Component {
                         <div className="grid container">
                             <div>
                                 <h2>Broadcast Posted on Teams Channel</h2>
-                                <p>Users get HR Engage messages in a Teams Channel as they drops.</p>
+                                <p>Users get HR Engage messages in a Teams Channel as they drops</p>
                             </div>
                             <div><img src={viewChannel} alt="" /></div>
                         </div>
@@ -109,7 +109,7 @@ class Home extends React.Component {
                             <div><img src={viewChat} alt="" /></div>
                             <div>
                                 <h2>User Gets Broadcast as a Chat</h2>
-                                <p>Users get HR Engage messages as chat as they drops.</p>
+                                <p>Users get HR Engage messages as chat as they drops</p>
                             </div>
                         </div>
                     </div>
@@ -119,8 +119,8 @@ class Home extends React.Component {
                         <div>
                             <h1>The HR Engage</h1>
                             <h1>helps you streamline and enhance employee engagement</h1>
-                            <h1>by providing a convenient platform that consolidates various communication channels and engagement activities.</h1>
-                            <a href="/" className="btn-btn btn-primary">Check on AppSource</a>
+                            <h1>by providing a convenient platform that consolidates various communication channels and engagement activities</h1>
+                            <a href="https://appsource.microsoft.com/en-us/marketplace/apps?search=reliance%20infosystems&page=1" className="btn-btn btn-primary">Check on AppSource</a>
                         </div>
                     </section>
 
